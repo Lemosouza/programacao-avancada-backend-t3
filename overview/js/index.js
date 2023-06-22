@@ -112,15 +112,6 @@ console.log(chars)
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
-function calculator(){
-    const formData = new FormData(document.querySelector('form'))
-    const n1 = parseInt(formData.get('n1'))
-    const n2 = parseInt(formData.get('n2'))
-    console.log(n1+n2)
-}
-
-
-
 // object literal
 // objetos literais são utilizados para representar endidades como pessoas, produtos, usuários...
 
@@ -179,29 +170,7 @@ console.log(dogObject)
 
 // Desafio 1: Armazene 5 dados numéricos em um vetor. Em seguida, copie para um objeto com as propriedades n1, n2, n3, n4 e n5. Utilize destructuring para copiar os valores para 5 variáveis. Construa um objeto JSON com os valores das variáveis.
 
-const vetor = [5,7,3,9,10]
-const objetoVetor = {
-    n1:vetor[0],
-    n2:vetor[1],
-    n3:vetor[2],
-    n4:vetor[3],
-    n5:vetor[4]
-}
-const { n1, n2, n3, n4, n5 } = objetoVetor 
-console.log(JSON.stringify({n1,n2,n3,n4,n5}))
-
 // Desafio 2: Desenvolva uma calculadora que armazene em um objeto JSON o resultado das 4 operações básicas. Em outras palavras: crie um objeto calculadora, inicialize cada uma das operações da calculadora (que serão propriedades do objeto) com o resultado do processamento matemático vindo de duas variáveis e converta para um objeto JSON.
-
-const variavel1 = 10, variavel2 = 15
-const objetoCalculadora = {
-    sum: variavel1+variavel2,
-    sub: variavel1-variavel2,
-    mult: variavel1*variavel2,
-    div: variavel1/variavel2
-}
-console.log(JSON.stringify(objetoCalculadora))
-
-
 
 // estruturas
 
